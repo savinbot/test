@@ -28,9 +28,9 @@ from telebot import types
 
 
 # НАСТРОЙКА ВЕБХУКА
-WEBHOOK_HOST = 'IP'
+WEBHOOK_HOST = 'localhost'
 WEBHOOK_PORT = "80"  # 443, 80, 88 или 8443 (порт должен быть открыт!)
-WEBHOOK_LISTEN = 'IP'  # На некоторых серверах придется указывать такой же IP, что и выше
+WEBHOOK_LISTEN = '0.0.0.0'  # На некоторых серверах придется указывать такой же IP, что и выше
 
 WEBHOOK_SSL_CERT = './webhook_cert.pem'  # Путь к сертификату
 WEBHOOK_SSL_PRIV = './webhook_pkey.pem'  # Путь к приватному ключу
